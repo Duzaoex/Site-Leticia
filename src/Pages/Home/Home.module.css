@@ -1,0 +1,46 @@
+.button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orange;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.section {
+    height: 500px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.fundo {
+    position: relative;
+    background-image: url('../../Util/Images/images.jpeg');
+    background-size: cover;
+    /* Ajuste o tamanho conforme necessário */
+    background-position: center center;
+    /* Ajuste a posição conforme necessário */
+    background-repeat: no-repeat;
+
+    /* Adicione um efeito de marca d'água com uma camada ::before */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.514);
+        /* Cor branca com 30% de opacidade */
+        pointer-events: none;
+        /* Garante que a camada não interfira com a interação do usuário */
+        z-index: 1;
+        /* Garante que a camada esteja acima da imagem */
+    }
+
+    /* Adicione mais estilos específicos para o fundo, se necessário */
+}
+
+.textoContainer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+}
