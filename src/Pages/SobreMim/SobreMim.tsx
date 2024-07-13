@@ -1,35 +1,11 @@
 import style from './SobreMim.module.css';
-import { Link } from "react-router-dom";
-import logo from '../../Util/Images/logo.png';
 import foto from '../../Util/Images/leticiaperfilbom.jpeg'
-import Footer from '../Home/Footer';
+import Header from '../../Component/Header/Header';
 
 function SobreMim() {
     return (
         <>
-            <header className={style.header}>
-                <img className={style.logo} src={logo} alt="logo psicologia" />
-                <div className={style.texto}>
-                    <h2 className={style.nome}>LETICIA NERIS CARNEIRO</h2>
-                    <h3 className={style.titulo}>PSICÓLOGA</h3>
-                </div>
-                <nav className={style.nav}>
-                    <div className={style.ul}>
-                        <button className={style.buttonStyle}>
-                            <Link to="/">Home</Link>
-                        </button>
-                        <button className={style.buttonStyle}>
-                            <Link to="/SobreMim">Sobre Mim</Link>
-                        </button>
-                        <button className={style.buttonStyle}>
-                            <Link to="/Servicos">Serviços</Link>
-                        </button>
-                        <button className={style.buttonStyle}>
-                            <Link to="/Localizacao">Localização</Link>
-                        </button>
-                    </div>
-                </nav>
-            </header>
+            <Header />
             <div className={style.sobreMim}>
                 <img className={style.foto} src={foto} alt="foto da psicologia" />
                 <div className={style.apresentacao}>
@@ -53,7 +29,11 @@ function SobreMim() {
                     </p>
                 </div>
             </div>
-            <Footer />
+            <footer className={style.footer}>
+                <p>© 2024 Psicologia e Psicanálise em Maringá. Todos os direitos reservados.</p>
+                <p>Contato: (44) 99127-3068 | Email: leticianeriscarneiro165@gmail.com</p>
+                <p className={style.credit}>Criado por Eduardo Neris Carneiro</p>
+            </footer>
         </>
     )
 }

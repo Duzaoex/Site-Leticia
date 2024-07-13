@@ -120,7 +120,7 @@ nav a {
     width: 300px;
     height: auto;
     margin-right: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(153, 68, 28, 0.5);
 }
 
 .apresentacao {
@@ -143,4 +143,26 @@ nav a {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    color: rgb(255, 255, 255);
+    background-color: #99441c;;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.credit {
+    font-weight: bold;
+    margin-top: 10px;
 }

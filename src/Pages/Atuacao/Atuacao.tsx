@@ -1,36 +1,12 @@
-import React from 'react';
-import style from './Servicos.module.css';
-import { Link } from "react-router-dom";
-import logo from '../../Util/Images/logo.png';
-import Footer from '../Home/Footer';
-import fotoConsultorio from '../../Util/Images/fotoconsultorio.jpeg';
 
-function Servicos() {
+import style from './Atuacao.module.css';
+import fotoConsultorio from '../../Util/Images/fotoconsultorio.jpeg';
+import Header from '../../Component/Header/Header';
+
+function Atuacao() {
     return (
         <>
-            <header className={style.header}>
-                <img className={style.logo} src={logo} alt="logo psicologia" />
-                <div className={style.texto}>
-                    <h2 className={style.nome}>LETICIA NERIS CARNEIRO</h2>
-                    <h3 className={style.titulo}>PSICÓLOGA</h3>
-                </div>
-                <nav className={style.nav}>
-                    <div className={style.ul}>
-                        <button className={style.buttonStyle}>
-                            <Link to="/">Home</Link>
-                        </button>
-                        <button className={style.buttonStyle}>
-                            <Link to="/SobreMim">Sobre Mim</Link>
-                        </button>
-                        <button className={style.buttonStyle}>
-                            <Link to="/Servicos">Serviços</Link>
-                        </button>
-                        <button className={style.buttonStyle}>
-                            <Link to="/Localizacao">Localização</Link>
-                        </button>
-                    </div>
-                </nav>
-            </header>
+            <Header />
             <div className={style.container}>
                 <img className={style.foto} src={fotoConsultorio} alt="foto consultorio psicologia" />
                 <div className={style.text}>
@@ -52,9 +28,13 @@ function Servicos() {
                     </p>
                 </div>
             </div>
-            <Footer />
+            <footer className={style.footer}>
+                <p>© 2024 Psicologia e Psicanálise em Maringá. Todos os direitos reservados.</p>
+                <p>Contato: (44) 99127-3068 | Email: leticianeriscarneiro165@gmail.com</p>
+                <p className={style.credit}>Criado por Eduardo Neris Carneiro</p>
+            </footer>
         </>
     );
 }
 
-export default Servicos;
+export default Atuacao;
