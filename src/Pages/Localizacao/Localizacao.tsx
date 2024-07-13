@@ -1,6 +1,8 @@
 import style from './Localizacao.module.css';
 import { Link } from "react-router-dom";
 import logo from '../../Util/Images/logo.png';
+import fachadaDoLocal from '../../Util/Images/fachada.jpeg'
+import Footer from '../Home/Footer';
 
 function Localizacao() {
     return (
@@ -29,6 +31,7 @@ function Localizacao() {
                 </nav>
             </header>
             <div className={style.container}>
+                <img className={style.foto} src={fachadaDoLocal} alt="fachada Do Local" />
                 <div className={style.text}>
                     <h1>Atendimento Presencial</h1>
                     <p>O Atendimento Presencial é realizado em Maringá-PR.</p>
@@ -54,6 +57,7 @@ function Localizacao() {
                     <p>Maringá-PR</p>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

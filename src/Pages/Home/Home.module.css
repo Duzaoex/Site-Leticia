@@ -1,46 +1,46 @@
-.button {
+.body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: orange;
-    border: none;
-    padding: 10px 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(252, 209, 170);
+    padding: 80px;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
-.section {
-    height: 500px;
-    margin-left: auto;
-    margin-top: 50px;
-}
-
-.fundo {
-    position: relative;
-    background-image: url('../../Util/Images/images.jpeg');
-    background-size: cover;
-    /* Ajuste o tamanho conforme necessário */
-    background-position: center center;
-    /* Ajuste a posição conforme necessário */
-    background-repeat: no-repeat;
-
-    /* Adicione um efeito de marca d'água com uma camada ::before */
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, 0.514);
-        /* Cor branca com 30% de opacidade */
-        pointer-events: none;
-        /* Garante que a camada não interfira com a interação do usuário */
-        z-index: 1;
-        /* Garante que a camada esteja acima da imagem */
-    }
-
-    /* Adicione mais estilos específicos para o fundo, se necessário */
+.consultorio {
+    border-radius: 5%;
+    width: 300px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 100px;
 }
 
 .textoContainer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 100px;
+    margin-right: 20px;
+    margin-left: 50px;
+    max-width: 50%; /* Para assegurar que o texto não ocupe muito espaço */
+}
+
+.h1 {
+    margin-bottom: 50px;
+}
+
+.h3 {
+    margin-bottom: 50px;
+}
+
+.button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px; /* Ajustado para maior espaçamento horizontal */
+    border-radius: 10px;
+    cursor: pointer;
 }

@@ -1,6 +1,8 @@
 import style from './SobreMim.module.css';
 import { Link } from "react-router-dom";
 import logo from '../../Util/Images/logo.png';
+import foto from '../../Util/Images/leticiaperfilbom.jpeg'
+import Footer from '../Home/Footer';
 
 function SobreMim() {
     return (
@@ -28,26 +30,30 @@ function SobreMim() {
                     </div>
                 </nav>
             </header>
-            <div className={style.apresentacao}>
-                <h1>Conheça a Psicóloga Letícia Neris Carneiro CRP 08/3351O</h1>
-                <h3>
-                    Olá, me chamo Letícia, atuo como psicóloga clínica.
-                </h3>
-                <p>
-                    Minha dedicação e trabalho em ofertar
-                    um serviço de saúde mental acontecem porque acredito que o cuidado, o acolhimento, à
-                    escuta, as técnicas da teoria da psicanálise podem proporcionar tratamento aos
-                    sofrimentos, queixas e sintomas que causam adoecimento.
-                </p>
-                <p>
-                    Atendo adolescentes, jovens e adultos que se encontram em sofrimento e incômodo com
-                    questões que vêm passando.
-                </p>
-                <p>
-                    Além da graduação em Psicologia, estou em constante formação através de Grupos de
-                    Estudos, Supervisão e Estudo Teórico que conduzem ao processo de análise.
-                </p>
+            <div className={style.sobreMim}>
+                <img className={style.foto} src={foto} alt="foto da psicologia" />
+                <div className={style.apresentacao}>
+                    <h1>Conheça a Psicóloga Letícia Neris Carneiro CRP 08/3351O</h1>
+                    <h3>
+                        Olá, me chamo Letícia, atuo como psicóloga clínica.
+                    </h3>
+                    <p>
+                        Minha dedicação e trabalho em ofertar
+                        um serviço de saúde mental acontecem porque acredito que o cuidado, o acolhimento, à
+                        escuta, as técnicas da teoria da psicanálise podem proporcionar tratamento aos
+                        sofrimentos, queixas e sintomas que causam adoecimento.
+                    </p>
+                    <p>
+                        Atendo adolescentes, jovens e adultos que se encontram em sofrimento e incômodo com
+                        questões que vêm passando.
+                    </p>
+                    <p>
+                        Além da graduação em Psicologia, estou em constante formação através de Grupos de
+                        Estudos, Supervisão e Estudo Teórico que conduzem ao processo de análise.
+                    </p>
+                </div>
             </div>
+            <Footer />
         </>
     )
 }
