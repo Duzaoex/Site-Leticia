@@ -1,6 +1,6 @@
 import Header from "../../Component/Header/Header";
 import style from './Home.module.css';
-import consultorio from '../../Util/Images/frase.jpeg';
+import consultorio from '../../Util/Images/home.jpeg';
 
 function Home() {
     return (
