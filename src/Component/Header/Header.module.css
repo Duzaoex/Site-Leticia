@@ -1,4 +1,4 @@
-/* Geral */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,6 @@
     margin-right: 10px;
 }
 
-/* Texto */
 .texto {
     margin-right: 100px;
 }
@@ -31,7 +30,6 @@
     font-weight: 500;
 }
 
-/* Nav */
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -43,7 +41,6 @@
     gap: 20px;
 }
 
-/* Botões */
 .buttonStyle {
     display: flex;
     align-items: center;
@@ -87,7 +84,6 @@
     
 }
 
-/* Links */
 nav a {
     text-decoration: none;
     color: inherit;
@@ -98,4 +94,47 @@ nav a {
 
 nav a:hover {
     color: #ffffff;
+}
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .logo {
+        height: 60px;
+        border-radius: 20px;
+        margin-left: 4%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .nav {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .buttonStyle {
+        border: #703215 1px solid;
+        margin-right: 0;
+        width: 45%; /* Ajuste para dividir 2 colunas */
+        height: 3em;
+    }
+    .footer {
+        font-size: 10px;
+        padding: 15px;
+    }
 }

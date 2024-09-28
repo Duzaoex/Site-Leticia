@@ -66,3 +66,56 @@ body {
 .credit {
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .container{
+        height: 70vh;
+    }
+    .textoContainer {
+        width: 80%;
+        top: 30%; /* Ajusta a posição vertical */
+    }
+
+    .h1 {
+        font-size: 1.5em; /* Ajuste no tamanho da fonte para h1 */
+    }
+
+    .h3 {
+        font-size: 1em; /* Ajuste no tamanho da fonte para h3 */
+    }
+
+    .button {
+        padding: 12px 15px; /* Ajuste no padding do botão */
+        width: 100%; /* Botão ocupa 100% da largura */
+    }
+}
+
+.h1, .h3 {
+    margin-bottom: 20px;
+}
+
+.button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #99441c;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    background-color: #99441c;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.credit {
+    font-weight: bold;
+}
